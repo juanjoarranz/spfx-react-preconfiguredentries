@@ -1,6 +1,3 @@
-export interface IGalleryProps {
-  listName     : string;
-  order        : string;
-  numberOfItems: number;
-  style        : string;
+import { IGalleryWebPartProps } from '../GalleryWebPart';
+export interface IGalleryProps extends IGalleryWebPartProps{
 }
