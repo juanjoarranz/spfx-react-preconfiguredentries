@@ -13,30 +13,53 @@
   // https://support.office.com/en-us/article/Turn-scripting-capabilities-on-or-off-1f2c515f-5d7e-448a-9fd7-835da935584f
   "requiresCustomScript": false,
 
-  "preconfiguredEntries": [{
-    // "groupId": "5c03119e-3074-46fd-976b-c60198311f70", // Other
-    // "group": { "default": "Other" },
-    // "title": { "default": "Gallery" },
-    // "description": { "default": "Shows items from selected list" },
-    // "officeFabricIconFontName": "Page",
+  "preconfiguredEntries": [
+    {
+      "groupId": "6737645a-4443-4210-a70e-e5e2a219133a",
+      "group": { "default": "Content" },
+      "title": { "default": "Recent images" },
+      "description": { "default": "Shows 5 most recent images" },
+      "officeFabricIconFontName": "Picture",
 
+      // The listName property specifies the name of the list from which list items should be displayed.
+      // The order property specifies the order in which items should be shown, that is chronological, or reverse chronological order.
+      // The numberOfItems property specifies how many items should be displayed.
+      // The style property specifies how the items should be displayed, such as thumbnails, which is useful for showing images, or as a list, which is more suitable for documents.
 
-    "groupId": "6737645a-4443-4210-a70e-e5e2a219133a",
-    "group": { "default": "Content" },
-    "title": { "default": "Recent images" },
-    "description": { "default": "Shows 5 most recent images" },
-    "officeFabricIconFontName": "Picture",
+      "properties": {
+        "listName": "Images",
+        "order": "reversed",
+        "numberOfItems": 5,
+        "style": "thumbnails"
+      }
+    },
 
-    // The listName property specifies the name of the list from which list items should be displayed.
-    // The order property specifies the order in which items should be shown, that is chronological, or reverse chronological order.
-    // The numberOfItems property specifies how many items should be displayed.
-    // The style property specifies how the items should be displayed, such as thumbnails, which is useful for showing images, or as a list, which is more suitable for documents.
+    {
+      "groupId": "6737645a-4443-4210-a70e-e5e2a219133a",
+      "group": { "default": "Content" },
+      "title": { "default": "Recent documents" },
+      "description": { "default": "Shows 10 most recent documents" },
+      "officeFabricIconFontName": "Documentation",
+      "properties": {
+        "listName": "Documents",
+        "order": "reversed",
+        "numberOfItems": 10,
+        "style": "list"
+      }
+    },
 
-    "properties": {
-      "listName": "Images",
-      "order": "reversed",
-      "numberOfItems": 5,
-      "style": "thumbnails"
+    {
+      "groupId": "6737645a-4443-4210-a70e-e5e2a219133a",
+      "group": { "default": "Content" },
+      "title": { "default": "Gallery" },
+      "description": { "default": "Shows items from the selected list" },
+      "officeFabricIconFontName": "CustomList",
+      "properties": {
+        "listName": "",
+        "order": "",
+        "numberOfItems": 5,
+        "style": ""
+      }
     }
-  }]
+  ]
 }
