@@ -19,8 +19,17 @@
     "title": { "default": "Gallery" },
     "description": { "default": "Shows items from selected list" },
     "officeFabricIconFontName": "Page",
+
+    // The listName property specifies the name of the list from which list items should be displayed.
+    // The order property specifies the order in which items should be shown, that is chronological, or reverse chronological order.
+    // The numberOfItems property specifies how many items should be displayed.
+    // The style property specifies how the items should be displayed, such as thumbnails, which is useful for showing images, or as a list, which is more suitable for documents.
+
     "properties": {
-      "description": "Gallery"
+      "listName": "",
+      "order": "",
+      "numberOfItems": 10,
+      "style": ""
     }
   }]
 }

@@ -1,3 +1,6 @@
 export interface IGalleryProps {
-  description: string;
+  listName     : string;
+  order        : string;
+  numberOfItems: number;
+  style        : string;
 }

@@ -12,7 +12,10 @@ import Gallery from './components/Gallery';
 import { IGalleryProps } from './components/IGalleryProps';
 
 export interface IGalleryWebPartProps {
-  description: string;
+  listName     : string;
+  order        : string;
+  numberOfItems: number;
+  style        : string;
 }
 
 export default class GalleryWebPart extends BaseClientSideWebPart<IGalleryWebPartProps> {
@@ -21,7 +24,10 @@ export default class GalleryWebPart extends BaseClientSideWebPart<IGalleryWebPar
     const element: React.ReactElement<IGalleryProps > = React.createElement(
       Gallery,
       {
-        description: this.properties.description
+        listName     : this.properties.listName,
+        order        : this.properties.order,
+        numberOfItems: this.properties.numberOfItems,
+        style        : this.properties.style
       }
     );
 
