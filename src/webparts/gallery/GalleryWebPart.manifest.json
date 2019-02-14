@@ -14,11 +14,18 @@
   "requiresCustomScript": false,
 
   "preconfiguredEntries": [{
-    "groupId": "5c03119e-3074-46fd-976b-c60198311f70", // Other
-    "group": { "default": "Other" },
-    "title": { "default": "Gallery" },
-    "description": { "default": "Shows items from selected list" },
-    "officeFabricIconFontName": "Page",
+    // "groupId": "5c03119e-3074-46fd-976b-c60198311f70", // Other
+    // "group": { "default": "Other" },
+    // "title": { "default": "Gallery" },
+    // "description": { "default": "Shows items from selected list" },
+    // "officeFabricIconFontName": "Page",
+
+
+    "groupId": "6737645a-4443-4210-a70e-e5e2a219133a",
+    "group": { "default": "Content" },
+    "title": { "default": "Recent images" },
+    "description": { "default": "Shows 5 most recent images" },
+    "officeFabricIconFontName": "Picture",
 
     // The listName property specifies the name of the list from which list items should be displayed.
     // The order property specifies the order in which items should be shown, that is chronological, or reverse chronological order.
@@ -26,10 +33,10 @@
     // The style property specifies how the items should be displayed, such as thumbnails, which is useful for showing images, or as a list, which is more suitable for documents.
 
     "properties": {
-      "listName": "",
-      "order": "",
-      "numberOfItems": 10,
-      "style": ""
+      "listName": "Images",
+      "order": "reversed",
+      "numberOfItems": 5,
+      "style": "thumbnails"
     }
   }]
 }
