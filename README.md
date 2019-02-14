@@ -1,4 +1,4 @@
-## react-preconfiguredentries
+## SharePoint Framework React WebPart with Preconfigured property entries
 
 This is where you include your WebPart documentation.
 
